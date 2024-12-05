@@ -68,3 +68,15 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+/* Responsive */
+
+/* Mobile phones */
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 60px auto;
+        width: 85%;
+        font-size: 18px;
+    }
+    
+}
