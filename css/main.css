@@ -68,7 +68,7 @@ ul.posts li {
 /* Responsive */
 
 /* Mobile phones */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     body{
         margin: 60px auto;
         width: 85%;
