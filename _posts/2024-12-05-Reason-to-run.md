@@ -3,7 +3,7 @@ layout: post
 title: "The Reason to Run"
 date: 2024-10-20
 ---
-"Why don’t you revise that part of your novel where the boy meets his new neighbor and falls in love with her?" said Mme. Charlene, a professor of literature at Geneva University, in her early forties, with a look that suggested she had seen too many romantic clichés. "It feels a bit shallow, especially in the part where you describe the boy’s feelings."
+"Why don’t you revise that part of your novel where the boy meets his new neighbor and falls in love with her?" said Mme. Dubois, a professor of literature at Geneva University, in her early forties, with a look that suggested she had seen too many romantic clichés. "It feels a bit shallow, especially in the part where you describe the boy’s feelings."
 
 "You’re right. I should probably do that," replied George, with the enthusiasm of someone agreeing to remove all four wisdom teeth.
 
