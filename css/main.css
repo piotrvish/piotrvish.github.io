@@ -50,6 +50,9 @@ posts{
 }
 
 ul.posts { 
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
