@@ -17,6 +17,10 @@ nav ul li{
     border-bottom: 1px solid #d5d5d5;
 }
 
+nav:hover, ul:hover, li:hover{
+    text-decoration: none;
+}
+
 a {
     text-decoration: none;
     color: #999;
