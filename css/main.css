@@ -6,7 +6,7 @@ nav ul, footer ul {
     font-family: "Azeret Mono", monospace;
     padding: 0px;
     list-style: none;
-    font-weight: bold;
+    font-weight: regular;
 }
 nav ul li, footer ul li {
     display: inline;
