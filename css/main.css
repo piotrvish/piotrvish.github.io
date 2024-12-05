@@ -78,5 +78,10 @@ ul.posts li {
         width: 85%;
         font-size: 18px;
     }
+
+    nav ul, footer ul {
+    font-size: 18px; 
+    font-weight: regular;
+}
     
 }
