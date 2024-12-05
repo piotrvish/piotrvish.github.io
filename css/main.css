@@ -2,6 +2,11 @@ body {
     margin: 60px auto;
     width: 50%;
 }
+
+nav{
+    border-top: 1px solid #d5d5d5;
+}
+
 nav ul, footer ul {
     font-family: "Azeret Mono", monospace;
     padding: 0px;
