@@ -4,14 +4,14 @@
     font-family: "PP Mori Book";
     src:
     local("PP Mori Book"),
-    url(/fonts/PPMori-Book.woff);
+    url(/fonts/ppmori/PPMori-Book.woff);
 }
 
 @font-face{
     font-family: "PP Mori SemiBold";
     src:
     local("PP Mori SemiBold"),
-    url(/fonts/PPMori-SemiBold.woff);
+    url(/fonts/ppmori/PPMori-SemiBold.woff);
 }
 
 
@@ -19,10 +19,10 @@
     font-family: "OTBrut-Regular";
     src:
     local("OTBBrut-Regular"),
-    url(/fonts/OTBrut-Regular.woff);
+    url(/fonts/otbrut/OTBrut-Regular.woff);
 }
 
-/* Main style */
+/* Main Styles*/
 
 body {
     margin: 60px auto;
@@ -34,11 +34,17 @@ nav{
 }
 
 nav ul, footer ul {
-    font-family: "Azeret Mono", monospace;
+    font-family: "PP Mori SemiBold", monospace;
     padding: 0px;
     list-style: none;
     font-weight: regular;
+    margin-bottom: 0.3em;
 }
+
+footer ul{
+    margin-top: 6px;
+}
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
@@ -50,21 +56,23 @@ nav:hover, ul:hover, li:hover{
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #000000;
 }
 a:hover {
-    border-bottom: 1px solid #5ce65c;
-    text-color: #5ce65c;
+    border-bottom: none;
+    color: #30db27;
 }
 h1 {
     font-size: 3em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "OTBrut-Regular", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    margin-bottom: 1px;
+    margin-top: 6px;
 }
 p {
-    font-size: 1.5em;
-    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-family: "PP Mori Book", sans-serif;
     line-height: 1.4em;
     color: #333;
 }
@@ -74,11 +82,11 @@ footer {
 }
 
 ul.posts { 
-    font-family: "Open Sans", sans-serif;
+    font-family: "PP Mori Book", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 ul.posts li {
@@ -156,6 +164,10 @@ ul.posts li {
     font-family: "Azeret Mono", monospace;
     color: #999;
     border-bottom: none;
+}
+
+.date{
+    color: #9a9a9a;
 }
 
 
