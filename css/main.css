@@ -4,14 +4,14 @@
     font-family: "PP Mori Book";
     src:
     local("PP Mori Book"),
-    url(/fonts/ppmori/PPMori-Book.woff);
+    url(/fonts/PPMori-Book.woff);
 }
 
 @font-face{
     font-family: "PP Mori SemiBold";
     src:
     local("PP Mori SemiBold"),
-    url(/fonts/ppmori/PPMori-SemiBold.woff);
+    url(/fonts/PPMori-SemiBold.woff);
 }
 
 
@@ -19,7 +19,7 @@
     font-family: "OTBrut-Regular";
     src:
     local("OTBBrut-Regular"),
-    url(/fonts/otbrut/OTBrut-Regular.woff);
+    url(/fonts/OTBrut-Regular.woff);
 }
 
 /* Main Styles*/
