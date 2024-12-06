@@ -39,7 +39,7 @@ nav{
 }
 
 nav ul, footer ul {
-    font-family: "PP Mori SemiBold", monospace;
+    font-family: "PP Mori SemiBold";
     padding: 0px;
     list-style: none;
     font-weight: regular;
@@ -147,7 +147,7 @@ section {
 }
 
 .category {
-    font-family: "Azeret Mono", monospace;
+    font-family: "PP Mori Book", sans-serif;
     border: 1px solid #000;
     background-color: #fff;
     color: #000;
@@ -185,7 +185,7 @@ section {
 }
 
 .language {
-    font-family: "Azeret Mono", monospace;
+    font-family: "PP Mori Book", sans-serif;
     border: 1px solid #000;
     background-color: #fff;
     color: #000;
@@ -230,4 +230,9 @@ section {
     font-size: 18px; 
     font-weight: regular;
 }
+
+.posts{
+        font-size: 1em;
+}
+
 }
