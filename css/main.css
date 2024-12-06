@@ -1,3 +1,28 @@
+/* Uploaded fonts */
+
+@font-face{
+    font-family: "PP Mori Book";
+    src:
+    local("PP Mori Book"),
+    url(/fonts/ppmori/PPMori-Book.woff);
+}
+
+@font-face{
+    font-family: "PP Mori SemiBold";
+    src:
+    local("PP Mori SemiBold"),
+    url(/fonts/ppmori/PPMori-SemiBold.woff);
+}
+
+
+@font-face{
+    font-family: "OTBrut-Regular";
+    src:
+    local("OTBBrut-Regular"),
+    url(/fonts/otbrut/OTBrut-Regular.woff);
+}
+
+
 body {
     margin: 60px auto;
     width: 50%;
