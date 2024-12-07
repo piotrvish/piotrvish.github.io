@@ -40,11 +40,12 @@ nav{
 }
 
 nav ul, footer ul {
-    font-family: "PP Mori SemiBold";
+    font-family: "PP Mori Book";
+    font-size: 1rem;
     padding: 0px;
     list-style: none;
     margin-bottom: 0.3em;
-}
+    }
 
 footer ul{
     margin-top: 6px;
@@ -85,7 +86,7 @@ p {
 
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 1rem;
 }
 
 ul.posts { 
@@ -315,9 +316,8 @@ section {
   }
   
   figcaption {
-    font-family: "PP Mori SemiBold";
-    font-size: 18px; 
-    font-weight: regular;
+    font-family: "PP Mori Book";
+    font-size: 1rem; 
     max-width: 10rem;
     margin: 0.25rem 0 0 0;
   }
