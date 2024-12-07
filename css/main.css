@@ -351,8 +351,8 @@ section {
 }
 
 .post-title {
-    font-size: 1.2em;
-    font-family: "PP Mori SemiBold", sans-serif;
+    font-size: 1rem;
+    font-family: "PP Mori SemiBold";
     text-decoration: none;
     color: #000;
     margin-bottom: 5px; /* Adds slight space between title and description */
@@ -363,7 +363,7 @@ section {
 }
 
 .post-description {
-    font-size: 1.2em;
+    font-size: 1rem;
     color: #9a9a9a;
     line-height: 1.4em;
     margin: 0;
