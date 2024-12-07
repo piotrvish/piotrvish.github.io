@@ -337,8 +337,8 @@ section {
 
 .post-date {
     width: 30%;
-    font-family: "PP Mori Book", sans-serif;
-    font-size: 1.2em;
+    font-family: "PP Mori Book";
+    font-size: 1rem;
     color: #9a9a9a;
     padding-right: 10px;
     text-align: left;
@@ -346,7 +346,7 @@ section {
 
 .post-content {
     width: 80%;
-    font-family: "PP Mori Book", sans-serif;
+    font-family: "PP Mori Book";
     text-align: left;
 }
 
