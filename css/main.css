@@ -491,4 +491,12 @@ body {
     width: 100%;
 }
 
+.carousel-container {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 10px auto;
+    position: relative;
+}
+
 }
