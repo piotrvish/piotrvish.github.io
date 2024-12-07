@@ -77,16 +77,21 @@ h1 {
     margin-top: 6px;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: "PP Mori Book", sans-serif;
     line-height: 1.4em;
     color: #333;
     margin-bottom: 3px;
 }
 
+.indented {
+    text-indent: 20px;
+    display: block;
+  }
+
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 ul.posts { 
@@ -94,7 +99,7 @@ ul.posts {
     font-optical-sizing: auto;
     font-style: normal;
     margin: 20px auto 40px; 
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 ul.posts li {
@@ -111,7 +116,7 @@ ul.posts li {
     padding: 10px;           /* Adds some padding for better appearance */
     margin-bottom: 0.3em;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 /* Carousel Styles */
@@ -317,7 +322,7 @@ section {
   
   figcaption {
     font-family: "PP Mori Book";
-    font-size: 1rem; 
+    font-size: 1em; 
     max-width: 10rem;
     margin: 0.25rem 0 0 0;
   }
@@ -336,9 +341,9 @@ section {
 }
 
 .post-date {
-    width: 30%;
+    width: 27%;
     font-family: "PP Mori Book";
-    font-size: 1rem;
+    font-size: 1em;
     color: #9a9a9a;
     padding-right: 10px;
     text-align: left;
@@ -351,7 +356,7 @@ section {
 }
 
 .post-title {
-    font-size: 1rem;
+    font-size: 1em;
     font-family: "PP Mori SemiBold";
     text-decoration: none;
     color: #000;
@@ -363,7 +368,7 @@ section {
 }
 
 .post-description {
-    font-size: 1rem;
+    font-size: 1em;
     color: #9a9a9a;
     line-height: 1.4em;
     margin: 0;
@@ -405,7 +410,7 @@ section {
 .post {
     margin-bottom: 10px;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* Additions for the language buttons and post date */
@@ -491,7 +496,7 @@ section {
 }
 
 figcaption {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #666;
     margin-top: 5px;
 }
