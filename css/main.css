@@ -120,6 +120,7 @@ ul.posts li {
 .indented {
     text-indent: 2em;
     display: block;
+    margin-bottom: -1em;
   }
 
 /* Carousel Styles */
