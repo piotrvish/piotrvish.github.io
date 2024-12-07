@@ -142,7 +142,7 @@ body, p, h1, h2, h3, h4, h5, h6, .text, .date {
 
 /* Disable Image Dragging */
 img {
-    -webkit-user-drag: none; /* Disable drag */
+    -webkit-user-drag: none; 
     -moz-user-drag: none;
     -ms-user-drag: none;
 }
@@ -360,7 +360,7 @@ figcaption {
     margin-top: 5px;
 }
 
-/* Overlay */
+/* Overlay for images */
 #overlay {
     position: fixed;
     top: 0;
@@ -372,11 +372,6 @@ figcaption {
     opacity: 0;
     transition: all 0.5s ease;
     z-index: 900;
-}
-
-/* Page Blur */
-.page-content.blurred {
-    filter: blur(5px);
 }
 
 /* Enlarged Image */
@@ -392,11 +387,19 @@ figcaption {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Page Blur */
+.page-content.blurred {
+    filter: blur(5px);
+}
+
+
 
 #overlay.active {
     visibility: visible;
     opacity: 1;
-    }
+}
 
 /* Default B&W Filter and Hover Effect */
 .illustration img {
