@@ -12,6 +12,7 @@
 			<!-- link to js files -->
 			<script src="js/carousel.js" defer></script>
 			<script src="js/protect-contents.js" defer></script>
+			<script src="/js/language-toggle.js" defer></script>
 		</head>
 		<body>
 			<nav>
@@ -22,11 +23,20 @@
 	    		</ul>
 			</nav>
 			<div class="container">
-			
-				<div class="blurb">
+				<div class="page-content">
 					<h1>Hi there, I'm Piotr!</h1>
-					<p>I'm graphic designer & artist from Switzerland. Below you'll find a couple of works from my portfolio. And here you can read about me <a href="/about">›››</a></p>
-				</div><!-- /.blurb -->
+					<div class="container">
+						<div class="language-buttons">
+							<button class="language" data-language="eng">English</button>
+							<button class="language" data-language="fr">Français</button>
+						</div>
+						<div class="lang eng">
+							<p>I'm graphic designer & artist from Switzerland. Below you'll find a couple of works from my portfolio. And here you can read about me <a href="/about">›››</a></p>
+						</div>
+						<div class="lang fr" style="display: none;">
+							<p>Je suis graphiste et artiste en Suisse. Vous trouverez ci-dessous quelques travaux de mon portfolio. Et ici vous pouvez lire à propos de moi <a href="/about">›››</a></p>
+						</div>
+				</div>
 <div>
 	<p class="section-separator">editorial</p>
 </div>
