@@ -460,43 +460,45 @@ figcaption {
 
 /* Responsive */
 @media only screen and (max-width: 850px) {
-body {
-    margin: 60px auto;
-    width: 80%;
-}
-}
-/* Mobile phones */
-@media only screen and (max-width: 600px) {
-    body{
+    body {
         margin: 60px auto;
-        width: 85%;
-        font-size: 18px;
+        width: 80%;
     }
-
-    nav ul, footer ul {
-    font-size: 18px; 
-    font-weight: regular;
-}
-
-.posts{
-        font-size: 1em;
-}
-/*for blog page*/
-
-.content-row {
-    flex-direction: column;
-}
-
-.illustration img {
-    width: 100%;
-}
-
-.carousel-container {
-    display: flex;
-    align-items: center;
-    width: 85%;
-    margin: 10px auto;
-    position: relative;
-}
-
-}
+    
+    .carousel-container {
+        width: 85%;
+    }
+    
+    
+    }
+    /* Mobile phones */
+    @media only screen and (max-width: 600px) {
+        body{
+            margin: 60px auto;
+            width: 85%;
+            font-size: 1rem;
+        }
+    
+        nav ul, footer ul {
+        font-size: 18px; 
+        font-weight: regular;
+    }
+    
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    .posts{
+            font-size: 1em;
+    }
+    /*for blog page*/
+    
+    .content-row {
+        flex-direction: column;
+    }
+    
+    .illustration img {
+        width: 100%;
+    }
+    
+    }
