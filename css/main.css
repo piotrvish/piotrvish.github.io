@@ -111,6 +111,7 @@ ul.posts li {
     padding: 10px;           /* Adds some padding for better appearance */
     margin-bottom: 0.3em;
     text-align: center;
+    font-size: 1rem;
 }
 
 /* Carousel Styles */
