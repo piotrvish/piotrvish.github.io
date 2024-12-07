@@ -545,6 +545,11 @@ body {
     width: 85%;
 }
 
+.single-carousel-slide img {
+    object-fit: scale-down; 
+    display: block;
+}
+
 
 }
 /* Mobile phones */
