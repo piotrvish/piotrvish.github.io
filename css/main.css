@@ -120,7 +120,6 @@ ul.posts li {
 .indented {
     text-indent: 2em;
     display: block;
-    margin-bottom: -1em;
   }
 
 /* Carousel Styles */
@@ -433,12 +432,12 @@ img {
 
 .align-left {
     margin-right: 1em;
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .align-right {
     margin-left: 1em;
-    max-width: 200px;
+    max-width: 100px;
 }
 
 /* Image Styles */
