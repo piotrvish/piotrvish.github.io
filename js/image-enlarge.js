@@ -5,25 +5,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     images.forEach(img => {
         img.addEventListener("click", () => {
-            if (overlay.classList.contains("active")) {
+            if (overlay.style.visibility === "visible") {
                 // Close the enlarged view
-                overlay.classList.remove("active");
+                overlay.style.visibility = "hidden";
+                overlay.style.opacity = "0";
                 pageContent.classList.remove("blurred");
                 overlay.innerHTML = "";
             } else {
                 // Open the enlarged view
-                overlay.classList.add("active");
+                overlay.style.visibility = "visible";
+                overlay.style.opacity = "1";
                 pageContent.classList.add("blurred");
                 overlay.innerHTML = `<img id="image-overlay" src="${img.src}" alt="${img.alt}">`;
                 document.getElementById("image-overlay").style.display = "block";
-                document.getElementById("image-overlay").style.opacity = "1";
             }
         });
     });
 
     // Close on Overlay Click
     overlay.addEventListener("click", () => {
-        overlay.classList.remove("active");
+        overlay.style.visibility = "hidden";
+        overlay.style.opacity = "0";
         pageContent.classList.remove("blurred");
         overlay.innerHTML = "";
     });
