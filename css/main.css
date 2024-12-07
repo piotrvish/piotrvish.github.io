@@ -421,17 +421,20 @@ figcaption {
 }
 
 /* Overlay */
-#overlay {
+#image-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1); /* 10% Black Overlay */
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease;
-    z-index: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    width: 100vw;
+    height: 100vh;
+    width: auto;        
+    height: auto;       
+    z-index: 1000;
+    display: none;
+    transition: all 0.3s ease;
+    object-fit: contain;
 }
 
 /* Page Blur */
@@ -439,19 +442,6 @@ figcaption {
     filter: blur(5px);
 }
 
-/* Enlarged Image */
-#image-overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 570px;
-    width: 90%;
-    height: auto;
-    z-index: 1000;
-    display: none;
-    transition: all 0.3s ease;
-}
 
 /* Default B&W Filter and Hover Effect */
 .illustration img {
