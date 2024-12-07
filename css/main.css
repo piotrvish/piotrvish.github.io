@@ -100,55 +100,7 @@ ul.posts li {
     list-style: none;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 3px;
-    border-top: 1px solid #d5d5d5;
-}
 
-.footer-btn {
-    font-family: "PP Mori Book", sans-serif;
-    border: 0.5px solid #000;
-    background-color: #fff;
-    color: #000;
-    padding: 2px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.footer-btn:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.copyright {
-    font-size: 1em;
-    color: #999;
-}
-
-/* Prevents text selection*/
-
-/* Disable Text Selection */
-body, p, h1, h2, h3, h4, h5, h6, .text, .date {
-    user-select: none; /* Prevents text selection */
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-}
-
-/* Disable Image Dragging */
-img {
-    -webkit-user-drag: none; /* Disable drag */
-    -moz-user-drag: none;
-    -ms-user-drag: none;
-}
-
-
-/*LANDING PAGE*/
 /* Carousel Styles */
 .carousel-container {
     display: flex;
@@ -165,7 +117,7 @@ img {
 
 .carousel-track {
     display: flex;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -207,6 +159,92 @@ img {
     border: none;
     cursor: not-allowed;
 }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3px;
+    border-top: 1px solid #d5d5d5;
+    position: relative;
+}
+
+.footer-btn {
+    font-family: "PP Mori Book", sans-serif;
+    border: 0.5px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 2px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.copyright {
+    font-size: 1em;
+    color: #999;
+}
+
+/* Prevents text selection*/
+
+/* Disable Text Selection */
+body, p, h1, h2, h3, h4, h5, h6, .text, .date {
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+/* Disable Image Dragging */
+img {
+    -webkit-user-drag: none; /* Disable drag */
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+}
+
+/*LANDING PAGE*/
+/* Styles for sliders*/
+section {
+    display: grid;
+    grid-template-columns: 4fr 5fr 2fr 0fr 0fr 0fr;
+    gap: 0;
+    width: 100%;
+    cursor: e-resize;
+    padding: 1rem 0.5rem;
+    transition: grid-template-columns 0.4s;
+  }
+  
+  section div {
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+  
+  section div.hide {
+    opacity: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+  
+  figure {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  
+  figcaption {
+    max-width: 10rem;
+    margin: 0.25rem 0 0 0;
+  }
 
 /*BLOG PAGE*/
 /* Styling for the posts container */
