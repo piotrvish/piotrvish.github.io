@@ -1,5 +1,0 @@
-# Prevent image hotlinking
-RewriteEngine on
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^https://(www\.)?yourwebsite\.com [NC]
-RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
