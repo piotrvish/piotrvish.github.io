@@ -32,3 +32,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateButtons();
 });
+
+    const singleTrack = document.querySelector('.single-carousel-track');
+    const singleSlides = Array.from(singleTrack.children);
+    const singlePrevButton = document.querySelector('.carousel-control.single-prev');
+    const singleNextButton = document.querySelector('.carousel-control.single-next');
+    const singleSlideWidth = singleSlides[0].getBoundingClientRect().width;
+
+    let singleCurrentIndex = 0;
+
+    const updateSingleButtons = () => {
+        singlePrevButton.disabled = singleCurrentIndex === 0;
+        singleNextButton.disabled = singleCurrentIndex >= singleSlides.length - 1;
+    };
+
+    const moveToSingleSlide = (index) => {
+        singleTrack.style.transform = `translateX(-${index * singleSlideWidth}px)`;
+        singleCurrentIndex = index;
+        updateSingleButtons();
+    };
+
+    singlePrevButton.addEventListener('click', () => {
+        if (singleCurrentIndex > 0) moveToSingleSlide(singleCurrentIndex - 1);
+    });
+
+    singleNextButton.addEventListener('click', () => {
+        if (singleCurrentIndex < singleSlides.length - 1) moveToSingleSlide(singleCurrentIndex + 1);
+    });
+
+    updateSingleButtons();
+});
