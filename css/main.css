@@ -142,7 +142,6 @@ body, p, h1, h2, h3, h4, h5, h6, .text, .date {
 
 /* Disable Image Dragging */
 img {
-    pointer-events: none;  /* Disable interactions */
     -webkit-user-drag: none; /* Disable drag */
     -moz-user-drag: none;
     -ms-user-drag: none;
