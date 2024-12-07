@@ -10,7 +10,7 @@
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 			<!-- link to js files -->
-			<script src="js/slides.js" defer></script>
+			<script src="js/carousel.js" defer></script>
 			<script src="js/protect-contents.js" defer></script>
 		</head>
 		<body>
@@ -22,50 +22,25 @@
 	    		</ul>
 			</nav>
 			<div class="container">
-			
 				<div class="blurb">
 					<h1>Hi there, I'm Piotr!</h1>
 					<p>I'm graphic designer & artist from Geneva, Switzerland. <a href="/about">Learn more...</a></p>
 				</div><!-- /.blurb -->
-
 			</div><!-- /.container -->
-
-			<section>
-				<div>
-				  <figure>
-					<img src="img/photo1.jpg" />
-				  </figure>
+			<div class="carousel-container">
+				<button class="carousel-control prev" aria-label="Previous Slide">‹</button>
+				<div class="carousel-track-container">
+					<ul class="carousel-track">
+						<li class="carousel-slide current-slide"><img src="img/photo1.jpg" alt="Image 1"></li>
+						<li class="carousel-slide"><img src="img/photo2.jpg" alt="Image 2"></li>
+						<li class="carousel-slide"><img src="img/photo3.jpg" alt="Image 3"></li>
+						<li class="carousel-slide"><img src="img/photo4.jpg" alt="Image 4"></li>
+						<li class="carousel-slide"><img src="img/photo5.jpg" alt="Image 5"></li>
+						<li class="carousel-slide"><img src="img/photo6.jpg" alt="Image 6"></li>
+					</ul>
 				</div>
-		  
-				<div>
-				  <figure>
-					<img src="img/photo2.jpg" />
-				  </figure>
-				</div>
-		  
-				<div>
-				  <figure>
-					<img src="img/photo3.jpg" />
-				  </figure>
-				</div>
-		  
-				<div>
-				  <figure>
-					<img src="img/photo4.jpg" />
-				  </figure>
-				</div>
-		  
-				<div>
-				  <figure>
-					<img src="img/photo5.jpg" />
-				  </figure>
-				</div>	  
-				<div>
-				  <figure>
-					<img src="img/photo6.jpg" />
-				  </figure>
-				</div>
-			  </section>
+				<button class="carousel-control next" aria-label="Next Slide">›</button>
+			</div>
 			  <footer>
 				<ul>
 					<li><a href="mailto:killergrafik@gmail.com">email me</a></li>

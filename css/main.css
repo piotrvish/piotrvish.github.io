@@ -149,41 +149,64 @@ img {
 
 
 /*LANDING PAGE*/
-/* Styles for sliders*/
-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 0fr 0fr 0fr;
-    gap: 0;
-    width: 100%;
-    padding: 1rem 0.5rem;
-    transition: grid-template-columns 0.4s;
-  }
-  
-  section div {
+/* Carousel Styles */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.carousel-track-container {
     overflow: hidden;
-    opacity: 1;
-    transition: opacity 0.4s;
-  }
-  
-  section div.hide {
-    opacity: 0;
-  }
-  
-  img {
-    max-width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-  }
-  
-  figure {
     width: 100%;
-    padding: 0 0.5rem;
-  }
-  
-  figcaption {
-    max-width: 10rem;
-    margin: 0.25rem 0 0 0;
-  }
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-slide {
+    min-width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: -50px;
+}
+
+.carousel-control.next {
+    right: -50px;
+}
+
+.carousel-control:disabled {
+    opacity: 0.5;
+    border: none;
+    cursor: not-allowed;
+}
 
 /*BLOG PAGE*/
 /* Styling for the posts container */
