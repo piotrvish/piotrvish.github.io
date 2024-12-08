@@ -694,13 +694,7 @@ figcaption {
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-radius: 5px;
     transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.animated-gif:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2);
 }
 
 /* Responsive */
