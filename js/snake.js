@@ -143,6 +143,5 @@ document.getElementById("right-btn").addEventListener("click", () => {
     if (direction.x === 0) direction = { x: segmentSize, y: 0 };
 });
 
-
 // Initialize the Game on Page Load
 initGame();

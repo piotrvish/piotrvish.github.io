@@ -110,7 +110,7 @@ ul.posts li {
     align-items: center;    /* Centers vertically */
     border-top: 1px solid #d5d5d5;
     border-bottom: 1px solid #d5d5d5;
-    font-family: "OTBrut Regular";
+    font-family: "PP Mori Book";
     padding: 0.5em;
     margin-bottom: 0.3em;
     text-align: center;
@@ -269,7 +269,7 @@ ul.posts li {
 
 /* Blinking Start Message */
 #start-message {
-    color: white;
+    color: rgb(77, 255, 0);
     font-family: "OTBrut-Regular";
     font-size: 24px;
     position: absolute;
@@ -305,36 +305,6 @@ ul.posts li {
 .footer-btn:hover {
     background-color: #000;
     color: #fff;
-}
-
-/* Failure Message */
-#fail-message {
-    color: white;
-    font-family: "PP Mori SemiBold", sans-serif;
-    font-size: 36px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;  /* Initially hidden */
-    animation: fadeout 3s ease-in forwards;
-}
-
-@keyframes fadeout {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-/* Score Display */
-#score-display {
-    color: white;
-    font-family: "PP Mori SemiBold", sans-serif;
-    font-size: 24px;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    text-align: right;
 }
 
 /* _________________ */
