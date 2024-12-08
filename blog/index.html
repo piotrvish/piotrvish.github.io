@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Writings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Writings</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>My Writings</h1>
+        <div class="categories">
+            <button class="category" data-filter="all">All</button>
+            <button class="category" data-filter="fiction">Fiction</button>
+            <button class="category" data-filter="poems">Poems</button>
+            <button class="category" data-filter="critique">Critique</button>
+        </div>
+        <div class="posts-container">
+            <div class="post-row fiction">
+                <div class="post-date">2024-11-20</div>
+                <div class="post-content">
+                    <a href="/blog/2024-11-20-rocky.html" class="post-title">Rocky</a>
+                    <p class="post-description">A flash scenario about two friends hanging neaer the lake.</p>
+                </div>
+            </div>
+            <div class="post-row critique">
+                <div class="post-date">2024-09-13</div>
+                <div class="post-content">
+                    <a href="/blog/2024-09-13-infinite-scroll.html" class="post-title">Infinite Scroll</a>
+                    <p class="post-description">Reflection on the use of the algorythm.</p>
+                </div>
+            </div>
+            <div class="post-row fiction">
+                <div class="post-date">2024-08-19</div>
+                <div class="post-content">
+                    <a href="/blog/2024-08-19-dogs-duty.html" class="post-title">Dog's Duty</a>
+                    <p class="post-description">A short story about an elderly couple and their love for dogs and each other.</p>
+                </div>
+            </div>
+            <div class="post-row fiction">
+                <div class="post-date">2024-08-01</div>
+                <div class="post-content">
+                    <a href="/blog/2024-08-01-reason-to-run.html" class="post-title">The Reason to Run</a>
+                    <p class="post-description">A flash story about an boy from Geneva who once fell in love.</p>
+                </div>
+            </div>
+            <div class="post-row poems">
+                <div class="post-date">2024-07-30</div>
+                <div class="post-content">
+                    <a href="/blog/2024-07-30-sunrise-whispers.html" class="post-title">Sunrise Whispers</a>
+                    <p class="post-description">A poetic reflection on the stillness of dawn and the beauty of drawn.</p>
+                </div>
+            </div>
+            <div class="post-row critique">
+                <div class="post-date">2024-06-04</div>
+                <div class="post-content">
+                    <a href="/blog/2024-06-04-dame-rase.html" class="post-title">Ball of Lonelinesses</a>
+                    <p class="post-description">Critical reflection following the visit of exhibition in Geneva.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="mailto:killergrafik@gmail.com">email me</a></li>
+        </ul>
+        <button class="footer-btn" onclick="window.open('https://www.instagram.com/kl_grafik/', '_blank')">inst</button>
+        <p class="copyright">© 2024 Piotr Vish</p>
+    </footer>
+
+<script src="/js/filter.js"></script>
+</body>
+</html>
