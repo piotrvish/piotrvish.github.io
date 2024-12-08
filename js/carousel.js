@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const initializeCarousel = (carouselContainer) => {
         const track = carouselContainer.querySelector('.carousel-track, .single-carousel-track');
