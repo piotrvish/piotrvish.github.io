@@ -26,8 +26,12 @@
 	        		<li><a href="/blog">Writings</a></li>
 	    		</ul>
 			</nav>
-				<h1 class="lang eng">Hi there, I'm Piotr!</h1>
+				<h1>Hi there, I'm Piotr!</h1>
 				<div class="container">
+					<div class="language-buttons">
+						<button class="language" data-language="eng">English</button>
+						<button class="language" data-language="fr">Français</button>
+					</div>
 					<div class="lang eng">
 						<p>I'm graphic designer & artist from Switzerland. Below you'll find a couple of works from my portfolio. And here you can read about me <a href="/about">›››</a></p>
 					</div>
@@ -60,7 +64,7 @@
 			<canvas id="game-canvas" width="500" height="500"></canvas>
 			<div id="start-message">press start</div>
 			<div id="game-controls">
-				<button id="start-btn" class="footer-btn">start</button>
+				<button id="start-btn" class="footer-btn">Start</button>
 				<button id="left-btn" class="footer-btn">←</button>
 				<button id="up-btn" class="footer-btn">↑</button>
 				<button id="down-btn" class="footer-btn">↓</button>
@@ -69,35 +73,43 @@
 			</div>
 		</div>
 		</div>
+		<!-- Game Audio Elements -->
+<audio id="bg-music" src="audio/background.wav" loop></audio>
+<audio id="fail-sound" src="audio/fail.wav"></audio>
+<audio id="eat-sound" src="audio/eat.wav"></audio>
+
+<!-- Failure Message and Score Display -->
+<div id="fail-message">failed</div>
+<div id="score-display">failures: 0</div>
 	</section>
-<p class="section-separator">cover design</p>
-<!--  Single-Image Carousel -->
-<div class="single-carousel-container">
-    <button class="carousel-control single-prev" aria-label="Previous Slide">‹</button>
-    <div class="single-carousel-track-container">
-        <ul class="single-carousel-track">
-            <li class="single-carousel-slide current-slide"><img src="img/fotografieklub-1.jpg" alt="Image 1"></li>
-            <li class="single-carousel-slide"><img src="img/fotografieklub-2.jpg" alt="Image 2"></li>
-            <li class="single-carousel-slide"><img src="img/fotografieklub-3.jpg" alt="Image 3"></li>
-			<li class="single-carousel-slide"><img src="img/fotografieklub-4.jpg" alt="Image 4"></li>
-			<li class="single-carousel-slide"><img src="img/fotografieklub-5.jpg" alt="Image 5"></li>
-			<li class="single-carousel-slide"><img src="img/fotografieklub-6.jpg" alt="Image 6"></li>
-			<li class="single-carousel-slide"><img src="img/fotografieklub-7.jpg" alt="Image 7"></li>
-			<li class="single-carousel-slide"><img src="img/fotografieklub-8.jpg" alt="Image 8"></li>
-			<li class="single-carousel-slide"><img src="img/fotografieklub-9.jpg" alt="Image 9"></li>
-			<li class="single-carousel-slide"><img src="img/fotografieklub-10.jpg" alt="Image 10"></li>
-        </ul>
-    </div>
-    <button class="carousel-control single-next" aria-label="Next Slide">›</button>
-</div>
-			</section>
-			  <footer>
-				<ul>
-					<li><a href="mailto:killergrafik@gmail.com">email me</a></li>
-				</ul>
-				<button class="footer-btn" onclick="window.open('https://www.instagram.com/kl_grafik/', '_blank')">inst</button>
-				<p class="copyright">© 2024 Piotr Vish</p>
-			</footer>
-</body>
+	<p class="section-separator">cover design</p>
+	<!--  Single-Image Carousel -->
+	<div class="single-carousel-container">
+		<button class="carousel-control single-prev" aria-label="Previous Slide">‹</button>
+		<div class="single-carousel-track-container">
+			<ul class="single-carousel-track">
+				<li class="single-carousel-slide current-slide"><img src="img/fotografieklub-1.jpg" alt="Image 1"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-2.jpg" alt="Image 2"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-3.jpg" alt="Image 3"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-4.jpg" alt="Image 4"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-5.jpg" alt="Image 5"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-6.jpg" alt="Image 6"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-7.jpg" alt="Image 7"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-8.jpg" alt="Image 8"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-9.jpg" alt="Image 9"></li>
+				<li class="single-carousel-slide"><img src="img/fotografieklub-10.jpg" alt="Image 10"></li>
+			</ul>
+		</div>
+		<button class="carousel-control single-next" aria-label="Next Slide">›</button>
+		</div>
+		</section>
+		<footer>
+		<ul>
+		<li><a href="mailto:killergrafik@gmail.com">email me</a></li>
+		</ul>
+		<button class="footer-btn" onclick="window.open('https://www.instagram.com/kl_grafik/', '_blank')">inst</button>
+		<p class="copyright">© 2024 Piotr Vish</p>
+		</footer>
+		</body>
 	</html>
 
