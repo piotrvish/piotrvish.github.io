@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".illustration img");
     const overlay = document.getElementById("overlay");
     const pageContent = document.querySelector(".page-content");
 
@@ -10,39 +9,45 @@ document.addEventListener("DOMContentLoaded", () => {
         overlay.innerHTML = "";
     };
 
-    images.forEach(img => {
-        img.addEventListener("click", () => {
-            if (overlay.style.visibility === "visible") {
-                closeOverlay();
-            } else {
+    const enlargeImages = (selector, shouldBlur) => {
+        const images = document.querySelectorAll(selector);
+
+        images.forEach((img) => {
+            img.addEventListener("click", () => {
                 overlay.style.visibility = "visible";
                 overlay.style.opacity = "1";
-                pageContent.classList.add("blurred");
+
+                if (shouldBlur) {
+                    pageContent.classList.add("blurred");
+                }
 
                 const enlargedImg = document.createElement("img");
                 enlargedImg.id = "image-overlay";
                 enlargedImg.src = img.src;
                 enlargedImg.alt = img.alt;
 
-                // Center the image in the viewport
-                enlargedImg.style.position = "fixed";
-                enlargedImg.style.top = "50%";
-                enlargedImg.style.left = "50%";
-                enlargedImg.style.transform = "translate(-50%, -50%)";
-                enlargedImg.style.maxWidth = "90vw";
-                enlargedImg.style.maxHeight = "90vh";
-                enlargedImg.style.objectFit = "contain";
-                enlargedImg.style.zIndex = "1000";
-                enlargedImg.style.display = "block";
+                Object.assign(enlargedImg.style, {
+                    position: "fixed",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    width: "auto",
+                    height: "100vh",
+                    maxWidth: "90vw",
+                    maxHeight: "90vh",
+                    objectFit: "contain",
+                    zIndex: "1000",
+                    display: "block",
+                });
 
                 overlay.appendChild(enlargedImg);
-
-                // Close on image click
                 enlargedImg.addEventListener("click", closeOverlay);
-            }
+            });
         });
-    });
+    };
 
-    // Close on overlay click
+    enlargeImages(".illustration img", true);  // Blur effect for illustrations
+    enlargeImages(".carousel-container img, .single-carousel-container img", true);  //  Blur for carousels
+
     overlay.addEventListener("click", closeOverlay);
 });
