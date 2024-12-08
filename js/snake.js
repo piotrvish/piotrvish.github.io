@@ -126,5 +126,23 @@ window.addEventListener("keydown", event => {
 document.getElementById("start-btn").addEventListener("click", startGame);
 document.getElementById("stop-btn").addEventListener("click", stopGame);
 
+// Add Button Listeners for Controls
+document.getElementById("left-btn").addEventListener("click", () => {
+    if (direction.x === 0) direction = { x: -segmentSize, y: 0 };
+});
+
+document.getElementById("up-btn").addEventListener("click", () => {
+    if (direction.y === 0) direction = { x: 0, y: -segmentSize };
+});
+
+document.getElementById("down-btn").addEventListener("click", () => {
+    if (direction.y === 0) direction = { x: 0, y: segmentSize };
+});
+
+document.getElementById("right-btn").addEventListener("click", () => {
+    if (direction.x === 0) direction = { x: segmentSize, y: 0 };
+});
+
+
 // Initialize the Game on Page Load
 initGame();
