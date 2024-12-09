@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const sendButton = document.getElementById("send-message-btn");
     const confirmationMessage = document.getElementById("confirmation-message");
 
-    // Handle Form Submission
     contactForm.addEventListener("submit", (event) => {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); // Prevent default form behavior
 
         const message = userMessage.value.trim();
         if (!message) {
@@ -14,16 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Create and trigger the mailto link
-        const email = "killergrafik@gmail.com";  // Update with your email
+        // Create and trigger mailto link
+        const email = "killergrafik@gmail.com";  // Replace with your email
         const subject = "New Message from Website";
         const body = encodeURIComponent(message);
 
-        // Use an <a> element for compatibility
-        const mailLink = document.createElement("a");
+        // Use a hidden <a> element for the mailto link
+        let mailLink = document.createElement("a");
         mailLink.href = `mailto:${email}?subject=${subject}&body=${body}`;
-        mailLink.target = "_blank";
+        mailLink.style.display = "none"; // Hide the element
+        document.body.appendChild(mailLink); // Add it to the DOM
+
+        // Simulate click
         mailLink.click();
+        document.body.removeChild(mailLink); // Clean up
 
         // Show Confirmation Message
         userMessage.style.display = "none";
@@ -31,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
         confirmationMessage.style.display = "block";
     });
 
-    // Handle "Enter" Key Press
+    // Prevent Enter key from adding a new line
     userMessage.addEventListener("keydown", (event) => {
         if (event.key === "Enter" && !event.shiftKey) {
             event.preventDefault(); // Prevents adding a new line
-            contactForm.requestSubmit(); // Trigger form submission
+            contactForm.requestSubmit(); // Trigger the form submission
         }
     });
 });
