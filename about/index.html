@@ -13,6 +13,7 @@
 			<script src="/js/language-toggle.js" defer></script>
 			<script src="/js/image-enlarge.js" defer></script>
 			<script src="/js/avoid-orphans-text.js" defer></script>
+			<script src="/js/contact.js" defer></script>
 		<body>
 		<div id="overlay"></div>
 		<div class="page-content">
@@ -54,6 +55,21 @@
 							</figure>
 							</div>
 						</div>
+			
+						<!-- Contact Form Section -->
+
+<section id="contact-section">
+    <p class="section-separator">drop me a message</p>
+
+    <!-- Message Input Field -->
+    <form id="contact-form">
+        <div id="message-container">
+            <textarea id="user-message" placeholder="Type your message..." required></textarea>
+            <button id="send-message-btn" type="submit" class="footer-btn">&#62;</button>
+        </div>
+        <p id="confirmation-message" style="display: none;">Your message was sent, thank you!</p>
+    </form>
+</section>
 			<footer>
 				<ul>
 					<li><a href="mailto:killergrafik@gmail.com">email me</a></li>
