@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const userMessage = document.getElementById("user-message");
     const confirmationMessage = document.getElementById("confirmation-message");
 
-    // Handle Form Submission
     contactForm.addEventListener("submit", (event) => {
         event.preventDefault();  // Prevent default form submission
 
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const subject = "New Message from Website";
         const body = encodeURIComponent(message);
 
-        // Open mail client
+        // Open the mail client
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 
         // Show Confirmation Message
@@ -27,10 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
         confirmationMessage.style.display = "block";
     });
 
-    // Prevent Enter from adding a new line in the textarea
+    // Prevent Enter key from creating a new line
     userMessage.addEventListener("keydown", (event) => {
         if (event.key === "Enter" && !event.shiftKey) {
-            event.preventDefault();
+            event.preventDefault();  // Prevents adding a new line
             contactForm.requestSubmit();  // Trigger the form submission
         }
     });
