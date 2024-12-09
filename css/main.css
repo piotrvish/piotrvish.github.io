@@ -690,12 +690,28 @@ figcaption {
 }
 
 /* Animated GIF Styles */
+/* GIF Container */
+
+.gif-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 2em 0;
+}
+
+/* Animated GIF Styles */
 .animated-gif {
     width: 100%;
     max-width: 400px;
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.animated-gif:hover {
+    transform: scale(2);
+    filter: grayscale(0);
+}
+
 
 /* Responsive */
 
