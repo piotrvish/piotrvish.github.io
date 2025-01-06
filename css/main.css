@@ -131,8 +131,6 @@ ul.posts li {
 
 .blank-section-separator {
     display: flex;
-    justify-content: left; /* Centers horizontally */
-    align-items: left;    /* Centers vertically */
     border-bottom: 1px solid #d5d5d5;
     font-family: "PP Mori Book";
     padding: 0.5em;
