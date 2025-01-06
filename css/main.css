@@ -79,6 +79,16 @@ h1 {
     margin-bottom: 1px;
     margin-top: 6px;
 }
+
+h2{
+    font-size: 2em;
+    font-family: "OTBrut-Regular", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
 p {
     font-size: 1rem;
     font-family: "PP Mori Book", sans-serif;
@@ -121,6 +131,12 @@ ul.posts li {
     text-indent: 2em;
     display: block;
   }
+
+/* CV Styles*/
+
+.CV-description{
+    color: #9a9a9a;
+}
 
 /* Carousel Styles */
 .carousel-container {
