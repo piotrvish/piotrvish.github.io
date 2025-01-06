@@ -1,0 +1,871 @@
+/*MAIN STYLES*/
+/* Uploaded fonts */
+
+@font-face{
+    font-family: "PP Mori Book";
+    src:
+    local("PP Mori Book"),
+    url(/fonts/PPMori-Book.woff);
+}
+
+@font-face{
+    font-family: "PP Mori SemiBold";
+    src:
+    local("PP Mori SemiBold"),
+    url(/fonts/PPMori-SemiBold.woff);
+}
+
+
+@font-face{
+    font-family: "OTBrut-Regular";
+    src:
+    local("OTBBrut-Regular"),
+    url(/fonts/OTBrut-Regular.woff);
+}
+
+/* Main BODY Styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    font-size: 18px; 
+  }
+
+body {
+    margin: 1em auto;
+    width: 700px;
+}
+
+nav{
+    border-bottom: 1px solid #d5d5d5;
+}
+
+nav ul, footer ul {
+    font-family: "PP Mori Book";
+    font-size: 1rem;
+    padding: 0px;
+    list-style: none;
+    margin-bottom: 0.3em;
+}
+
+footer ul{
+    margin-top: 6px;
+}
+
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav:hover, ul:hover, li:hover{
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    border-bottom: none;
+    color: #FF0000;
+}
+h1 {
+    font-size: 3em;
+    font-family: "OTBrut-Regular", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 1px;
+    margin-top: 6px;
+}
+p {
+    font-size: 1rem;
+    font-family: "PP Mori Book", sans-serif;
+    line-height: 1.4em;
+    color: #333;
+    margin-bottom: 3px;
+    position: relative;
+    z-index: 99999;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: 1rem;
+}
+
+ul.posts { 
+    font-family: "PP Mori Book", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 20px auto 40px; 
+    font-size: 1rem;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+.section-separator {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    font-family: "PP Mori Book";
+    padding: 0.5em;
+    margin-bottom: 0.3em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.indented {
+    text-indent: 2em;
+    display: block;
+  }
+
+/* Contact Form Styles */
+
+/* Contact Form Styles */
+#contact-section {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+#message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+}
+
+#user-name, #user-email, #user-message {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "PP Mori Book", sans-serif;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    background-color: #F8F9FA;
+}
+
+#user-message {
+    height: 100px;
+}
+
+#user-name:focus, #user-email:focus, #user-message:focus {
+    background-color: #FFF;
+    border-color: #FF6347; /* Highlight on focus */
+}
+
+#send-message-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#send-message-btn:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+#confirmation-message {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-slide {
+    min-width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 0.5em;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: -50px;
+}
+
+.carousel-control.next {
+    right: -50px;
+}
+
+.carousel-control:disabled {
+    opacity: 0.5;
+    border: none;
+    cursor: not-allowed;
+}
+
+/* Single-Image Carousel Styles with Proportional Resizing */
+.single-carousel-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.single-carousel-track-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.single-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    list-style: none;
+    padding: 0;
+}
+
+.single-carousel-slide {
+    min-width: 100%; /* Use full width of the container */
+    flex: 0 0 100%;
+}
+
+.single-carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintains proportion */
+}
+
+/* Controls for Single-Image Carousel */
+.carousel-control.single-prev {
+    left: -50px;
+}
+
+.carousel-control.single-next {
+    right: -50px;
+}
+
+.carousel-control {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Carousel enlarge image*/
+
+.carousel-container img,
+.single-carousel-container img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-container img:hover,
+.single-carousel-container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* _________________ */
+
+/* Snake Game Section */
+#snake-game-section {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+#game-container {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#game-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Game canvas background */
+    margin: 0 auto;
+
+}
+
+/* Blinking Start Message */
+#start-message {
+    color: rgb(77, 255, 0);
+    font-family: "OTBrut-Regular";
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 1.2s step-start infinite;
+    text-align: center;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#game-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.footer-btn {
+    font-family: "PP Mori Book", sans-serif;
+    border: 0.5px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d5d5d5;
+    position: relative;
+}
+
+.footer-btn {
+    font-family: "PP Mori Book", sans-serif;
+    border: 0.5px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 0.1em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+/* Prevents text selection*/
+
+/* Disable Text Selection */
+body, p, h1, h2, h3, h4, h5, h6, .text, .date {
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+/* Disable Image Dragging */
+img {
+    -webkit-user-drag: none; /* Disable drag */
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+}
+
+/*BLOG PAGE*/
+/* Styling for the posts container */
+.posts-container {
+    max-width: 575px;
+    margin-top: 30px;
+}
+
+.post-row {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 1em;
+}
+
+.post-date {
+    width: 28%;
+    font-family: "PP Mori Book", sans-serif;
+    font-size: 1rem;
+    color: #9a9a9a;
+    padding-right: 0.5em;
+    text-align: left;
+}
+
+.post-content {
+    width: 80%;
+    font-family: "PP Mori Book", sans-serif;
+    text-align: left;
+}
+
+.post-title {
+    font-size: 1rem;
+    font-family: "PP Mori SemiBold", sans-serif;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 1.5em; 
+}
+
+.post-title:hover {
+    color: #FF0000;
+}
+
+.post-description {
+    font-size: 1rem;
+    color: #9a9a9a;
+    line-height: 1.4em;
+    margin: 0;
+    max-width: 345px; /* Restricts description width */
+}
+
+
+/* Styles for blog list */
+.categories {
+    margin-top: 0.5em;
+    display: flex;
+    gap: 10px;
+}
+
+.category {
+    font-family: "PP Mori Book", sans-serif;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 0.1em 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.content{
+    margin-bottom: 2em;
+}
+
+.posts {
+    margin-top: 0.5em;
+}
+
+.post {
+    margin-bottom: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+/* Additions for the language buttons and post date */
+
+.language-buttons {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    gap: 10px;
+}
+
+.language {
+    font-family: "PP Mori Book";
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 0.1em 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-family: "PP Mori Book";
+    color: #999;
+    border-bottom: none;
+}
+
+.date{
+    color: #9a9a9a;
+}
+/*BLOG TEXT PAGE*/
+
+/* General Page Layout */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Layout */
+.content-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.align-left {
+    margin-right: 1em;
+    float: left;
+    max-width: 33%;
+}
+
+.align-right {
+    margin-left: 1em;
+    float: right;
+    max-width: 33%;
+}
+
+/*Specific layout styles*/
+
+/* Layout 1: Text 2/3, Image Left 1/3 */
+.layout-1 .illustration {
+    order: 1;
+    flex: 1;
+    max-width: 33%;
+}
+
+.layout-1 p {
+    order: 2;
+    flex: 2;
+    max-width: 66%;
+}
+
+/* Layout 2: Text 2/3, Image Right 1/3 */
+.layout-2 p {
+    order: 1;
+    flex: 2;
+    max-width: 66%;
+}
+
+.layout-2 .illustration {
+    order: 2;
+    flex: 1;
+    max-width: 33%;
+}
+
+/* Layout 3: Text 1/3, Image Right 2/3 */
+.layout-3 p {
+    order: 1;
+    flex: 1;
+    max-width: 33%;
+}
+
+.layout-3 .illustration {
+    order: 2;
+    flex: 2;
+    max-width: 66%;
+}
+
+/* Layout 4: Text 1/3, Image Left 2/3 */
+.layout-4 .illustration {
+    order: 1;
+    flex: 2;
+    max-width: 66%;
+}
+
+.layout-4 p {
+    order: 2;
+    flex: 1;
+    max-width: 33%;
+}
+
+/* Maintain Hover & Enlargement Effects */
+.illustration img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%); /* Black & White Default */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.image-hover img:hover {
+    filter: grayscale(0); /* Hover Removes B&W */
+}
+
+/* Image Styles */
+.illustration {
+    position: relative;
+}
+
+.illustration img {
+    width: 25px;
+    height: 25px;
+    height: auto;
+    display: inline-flex;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.image-hover img:hover {
+    filter: brightness(80%);
+}
+
+figcaption {
+    font-family: "PP Mori Book";
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Overlay */
+
+/* Universal Image Hover Effect */
+.carousel-container img,
+.single-carousel-container img,
+.illustration img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Zoom */
+.carousel-container img:hover,
+.single-carousel-container img:hover,
+.illustration img:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay for Enlarged Image */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+    z-index: 999;
+}
+
+/* Blur Effect */
+.page-content.blurred {
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+}
+
+/* Enlarged Image Styling */
+#image-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100vh;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    z-index: 1000;
+    display: block;
+}
+
+
+/* Default B&W Filter and Hover Effect */
+.illustration img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%); /* Black & White Default */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.image-hover img:hover {
+    filter: grayscale(0); /* Hover Removes B&W */
+}
+
+/* Animated gifs */
+
+/* GIF Container */
+
+.gif-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 2em 0;
+}
+
+/* Animated GIF Styles */
+.animated-gif {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.animated-gif:hover {
+    transform: scale(2);
+}
+
+/* Responsive */
+
+
+@media only screen and (max-width: 850px) {
+body {
+    margin: 2em auto;
+    width: 80%;
+}
+
+.carousel-container, .single-carousel-container {
+    width: 85%;
+}
+
+.single-carousel-slide img {
+    object-fit: scale-down; 
+    display: block;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 1em auto;
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    nav ul, footer ul {
+    font-size: 1rem; 
+    font-weight: regular;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.posts{
+        font-size: 1rem;
+}
+/*for blog page*/
+
+.content-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.content-row p, 
+.content-row .illustration {
+    max-width: 100%;
+    width: 100%;
+    order: initial;
+}
+}
+
+
+/* Responsive Design for Carousels */
+@media only screen and (max-width: 750px) {
+    .carousel-container, .single-carousel-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .single-carousel-container{
+        padding-bottom: 1em;
+    }
+
+    /* Correct slides sizing for carousel-container */
+    .carousel-slide {
+        flex: 1 0 calc(100% / 3); /* Three slides should take the full width */
+        box-sizing: border-box;
+        padding: 0.5em;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Ensure proportional height reduction for single-carousel */
+    .single-carousel-slide {
+        width: 100%;
+        aspect-ratio: 1 / 1; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .single-carousel-slide img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Adjust controls */
+    .carousel-control, .carousel-control.single-prev, .carousel-control.single-next {
+        font-size: 1.2em; 
+    }
+}
