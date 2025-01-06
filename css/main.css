@@ -808,6 +808,12 @@ body {
     display: block;
 }
 
+.post-content {
+    width: 80%;
+    font-family: "PP Mori Book", sans-serif;
+    text-align: left;
+}
+
 
 }
 
