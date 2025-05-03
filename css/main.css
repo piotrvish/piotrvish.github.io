@@ -831,17 +831,26 @@ vp-center {
 /*video wrapper*/
 
 .video-wrapper {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 100%;
     overflow: hidden;
+    background: transparent;
+    box-shadow: none;
 }
 
 .video-wrapper iframe {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 360px;
-    border: none;
-    display: block;
-    margin: 0;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    transform: none !important;
+    filter: none !important;
 }
 
 
