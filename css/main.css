@@ -814,6 +814,11 @@ body {
     text-align: left;
 }
 
+.post-content iframe {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
 
 }
 
