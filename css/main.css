@@ -815,9 +815,12 @@ body {
 }
 
 .post-content iframe {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 0.5em;
+        display: block;
+        margin: 0;              /* Removes default top/bottom margin */
+        padding: 0;
+        border: none;
+        width: 100%;
+        aspect-ratio: 16 / 9;   /* Keeps responsive size */
 }
 
 }
