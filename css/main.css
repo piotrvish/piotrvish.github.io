@@ -279,7 +279,7 @@ ul.posts li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.15em;
+    gap: 0.1em;
     font-family: "PP Mori Book", sans-serif;
     text-align: left;
 }
