@@ -307,7 +307,7 @@ ul.posts li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.9em;
+    gap: inherit;
 }
 
 .video-posts .post-content .post-description {
