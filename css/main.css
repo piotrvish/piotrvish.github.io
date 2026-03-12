@@ -258,7 +258,7 @@ ul.posts li {
 .post-row {
     display: grid;
     grid-template-columns: 140px minmax(0, 1fr);
-    column-gap: 1.25em;
+    column-gap: inherit;
     align-items: start;
     margin-bottom: 2.2em;
 }
