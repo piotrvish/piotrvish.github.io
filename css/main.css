@@ -257,7 +257,7 @@ ul.posts li {
 
 .post-row {
     display: grid;
-    grid-template-columns: 28% minmax(0, 1fr);
+    grid-template-columns: 140px minmax(0, 1fr);
     column-gap: 1.25em;
     align-items: start;
     margin-bottom: 2.2em;
@@ -270,37 +270,20 @@ ul.posts li {
     line-height: 1.2;
     text-align: left;
     padding-top: 0.1em;
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
 }
 
 .post-content {
     min-width: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.9em;
     font-family: "PP Mori Book", sans-serif;
     text-align: left;
 }
 
-/* this keeps description visually above the video even if HTML order stays old */
-.post-content .post-description {
-    order: 1;
-}
-
-.post-content .post-video,
-.post-content iframe {
-    order: 2;
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
 .post-title {
-    margin-bottom: 1.5em;
+    display: inline-block;
+    margin-bottom: 0.2em;
     color: var(--black);
     font-family: "PP Mori SemiBold", sans-serif;
     font-size: 1rem;
@@ -317,6 +300,30 @@ ul.posts li {
     color: var(--muted);
     font-size: 1rem;
     line-height: 1.4em;
+}
+
+/* VIDEO PAGE ONLY */
+.video-posts .post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9em;
+}
+
+.video-posts .post-content .post-description {
+    order: 1;
+}
+
+.video-posts .post-content .post-video,
+.video-posts .post-content iframe {
+    order: 2;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .categories,
@@ -747,15 +754,18 @@ figcaption {
 
     .post-content {
         width: 100%;
-        gap: 0.75em;
     }
 
     .post-description {
         max-width: 100%;
     }
 
-    .post-video,
-    .post-content iframe {
+    .video-posts .post-content {
+        gap: 0.75em;
+    }
+
+    .video-posts .post-video,
+    .video-posts .post-content iframe {
         width: 100%;
     }
 
